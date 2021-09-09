@@ -1,9 +1,13 @@
 {
     "source": {
-        "index": ["metrics-endpoint.metadata_current_default*",".fleet-agents*"]
+        "index": [
+            "metrics-endpoint.metadata_current_default*",
+            ".fleet-agents*"
+        ]
     },
     "dest": {
-        "index": ".metrics-endpoint.metadata_united_default"
+        "index": ".metrics-endpoint.metadata_united_default",
+        "pipeline": "metrics-endpoint.metadata-united"
     },
     "frequency": "4s",
     "sync": {

@@ -1,0 +1,13 @@
+{
+    "version": 1,
+    "description": "Pipeline for endpoint metadata united transform bar",
+    "processors": [
+        {
+            "drop": {
+                "description": "drop non-endpoint agents",
+                "if": "!ctx.containsKey('combined.endpoint')"
+            }
+        }
+    ]
+  }
+  
