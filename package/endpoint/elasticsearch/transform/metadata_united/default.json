@@ -6,7 +6,8 @@
         ]
     },
     "dest": {
-        "index": ".metrics-endpoint.metadata_united_default"
+        "index": ".metrics-endpoint.metadata_united_default",
+        "pipeline": "8.12.0-metrics-metadata-united"
     },
     "frequency": "1s",
     "sync": {

@@ -1,0 +1,10 @@
+{
+  "description": "Pipeline for dropping invalid united metadata docs",
+  "processors": [
+    {
+      "drop": {
+        "if": "ctx?.united?.agent == null || ctx?.united?.endpoint == null"
+      }
+    }
+  ]
+}
